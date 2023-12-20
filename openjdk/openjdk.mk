@@ -73,6 +73,7 @@ JTREG_ASSERT_OPTION = -ea -esa
 JTREG_BASIC_OPTIONS += $(JTREG_ASSERT_OPTION)
 # Report details on all failed or error tests, times, and suppress output for tests that passed
 JTREG_BASIC_OPTIONS += -v:all,fail,error,time,nopass
+JTREG_BASIC_OPTIONS += -cygwin
 # Retain all files for failing tests
 JTREG_BASIC_OPTIONS += -retain:fail,error,*.dmp,javacore.*,heapdump.*,*.trc
 # Ignore tests are not run and completely silent about it
